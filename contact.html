@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjivani University | Contact - MCA Department</title>
+    
+    <!-- Internal and External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="external-styles.css">
+    
+    <!-- Page-specific styling -->
+    <style>
+        /* Form styling with various selectors */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+        
+        /* Input type selectors */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        /* Focus pseudo-class */
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        /* Required field styling */
+        input:required,
+        textarea:required {
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        /* Contact info cards */
+        .contact-info-card {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Sanjivani University</h1>
+        <p>Master of Computer Applications (MCA)</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="department.html" class="nav-link">About Department</a>
+            <a href="faculty.html" class="nav-link">Faculty</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="content-section fade-in">
+            <h1 class="section-title">Contact Us</h1>
+            <p class="quote-text">"We're here to help you with any questions about our MCA program, admissions, or academic opportunities. Get in touch with us today!"</p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="content-section">
+            <div class="grid-3">
+                <div class="contact-info-card pulse-hover">
+                    <h3>📍 Visit Us</h3>
+                    <div class="contact-detail">
+                        <span>Sanjivani University</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span>MCA Department, Block A</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span>Pune, Maharashtra 411041</span>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card pulse-hover">
+                    <h3>📞 Call Us</h3>
+                    <div class="contact-detail">
+                        <span>+91 20 1234 5678</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span>+91 20 8765 4321</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span>Toll Free: 1800 123 4567</span>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card pulse-hover">
+                    <h3>✉️ Email Us</h3>
+                    <div class="contact-detail">
+                        <span>mca@sanjivani.edu.in</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span>admissions@sanjivani.edu.in</span>
+                    </div>
+                    <div class="contact-detail">
+                        <span>info@sanjivani.edu.in</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Department Section -->
+        <section class="content-section">
+            <h2 class="section-title">📋 Examination Department</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🎯 Exam Controller Office</h3>
+                    <p><strong>Dr. Rajesh Patil</strong> - Controller of Examinations</p>
+                    <p><strong>Phone:</strong> +91 20 1234 5680</p>
+                    <p><strong>Email:</strong> examcontroller@sanjivani.edu.in</p>
+                    <p><strong>Office Hours:</strong> Monday - Friday, 10:00 AM - 4:00 PM</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📝 Exam Services</h3>
+                    <ul style="text-align: left;">
+                        <li>Semester examination scheduling</li>
+                        <li>Result processing and publication</li>
+                        <li>Grade cards and transcripts</li>
+                        <li>Re-evaluation and supplementary exams</li>
+                        <li>Academic record verification</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card" style="background: linear-gradient(135deg, #fef3c7, #fbbf24); margin-top: 2rem;">
+                <h3>📅 Important Exam Dates</h3>
+                <div class="grid-2">
+                    <div>
+                        <p><strong>Semester 1 Exams:</strong> December 2025</p>
+                        <p><strong>Semester 2 Exams:</strong> May 2026</p>
+                        <p><strong>Supplementary Exams:</strong> July 2026</p>
+                    </div>
+                    <div>
+                        <p><strong>Result Declaration:</strong> Within 30 days</p>
+                        <p><strong>Grade Card Issue:</strong> Within 45 days</p>
+                        <p><strong>Re-evaluation Deadline:</strong> 15 days from result</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Academic Information -->
+        <section class="content-section">
+            <h2 class="section-title">🎓 Education & Academic Information</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>📚 Academic Structure</h3>
+                    <p><strong>Program Duration:</strong> 2 Years (4 Semesters)</p>
+                    <p><strong>Credit System:</strong> Choice Based Credit System (CBCS)</p>
+                    <p><strong>Total Credits:</strong> 120 Credits</p>
+                    <p><strong>Grading System:</strong> 10-point scale</p>
+                    <p><strong>Minimum CGPA:</strong> 5.0 for graduation</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🏆 Academic Achievements</h3>
+                    <ul style="text-align: left;">
+                        <li>NAAC A+ Grade accreditation</li>
+                        <li>NBA accredited programs</li>
+                        <li>University Grants Commission (UGC) approved</li>
+                        <li>AICTE recognized institution</li>
+                        <li>ISO 9001:2015 certified</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>📖 Curriculum Highlights</h3>
+                <div class="grid-3">
+                    <div>
+                        <h4>Core Subjects</h4>
+                        <ul style="text-align: left; font-size: 0.9rem;">
+                            <li>Programming in C/C++</li>
+                            <li>Data Structures</li>
+                            <li>Database Management</li>
+                            <li>Software Engineering</li>
+                            <li>Computer Networks</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Advanced Topics</h4>
+                        <ul style="text-align: left; font-size: 0.9rem;">
+                            <li>Artificial Intelligence</li>
+                            <li>Machine Learning</li>
+                            <li>Cloud Computing</li>
+                            <li>Cybersecurity</li>
+                            <li>Mobile Computing</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Practical Training</h4>
+                        <ul style="text-align: left; font-size: 0.9rem;">
+                            <li>Industry Internship</li>
+                            <li>Project Work</li>
+                            <li>Lab Sessions</li>
+                            <li>Seminar Presentations</li>
+                            <li>Research Projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reports & Documents Section -->
+        <section class="content-section">
+            <h2 class="section-title">📊 Reports & Academic Documents</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>📈 Annual Reports</h3>
+                    <ul style="text-align: left;">
+                        <li><a href="#" style="color: var(--secondary-color);">Annual Report 2023-24</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Placement Report 2024</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Research Report 2023</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Academic Audit Report</a></li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>📋 Academic Documents</h3>
+                    <ul style="text-align: left;">
+                        <li><a href="#" style="color: var(--secondary-color);">Curriculum & Syllabus</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Academic Calendar</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Examination Guidelines</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Student Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>🎯 Performance Reports</h3>
+                    <ul style="text-align: left;">
+                        <li><a href="#" style="color: var(--secondary-color);">Student Performance Analysis</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Faculty Research Output</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Industry Collaboration Report</a></li>
+                        <li><a href="#" style="color: var(--secondary-color);">Alumni Achievement Report</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form and Information -->
+        <section class="content-section">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="section-subtitle">Send us a Message</h2>
+                    <form class="contact-form" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiry">Inquiry Type *</label>
+                            <select id="inquiry" name="inquiry" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="admission">Admission Information</option>
+                                <option value="curriculum">Curriculum Details</option>
+                                <option value="faculty">Faculty Information</option>
+                                <option value="facilities">Facilities & Infrastructure</option>
+                                <option value="placement">Placement Assistance</option>
+                                <option value="research">Research Opportunities</option>
+                                <option value="exam">Examination Related</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Enter the subject of your inquiry">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" required style="width: auto; margin-right: 0.5rem;">
+                                I agree to the <a href="#" style="color: var(--secondary-color);">Terms and Conditions</a> and <a href="#" style="color: var(--secondary-color);">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn pulse-hover">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Additional Information -->
+                <div>
+                    <h2 class="section-subtitle">Office Hours</h2>
+                    <div class="card">
+                        <h4>📅 Academic Office</h4>
+                        <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+                        <p><strong>Saturday:</strong> 9:00 AM - 1:00 PM</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>🎓 Admission Office</h4>
+                        <p><strong>Monday - Saturday:</strong> 9:00 AM - 6:00 PM</p>
+                        <p><strong>Sunday:</strong> 10:00 AM - 4:00 PM</p>
+                        <p><em>Extended hours during admission season</em></p>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>📚 Library & Labs</h4>
+                        <p><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</p>
+                        <p><strong>Saturday:</strong> 9:00 AM - 6:00 PM</p>
+                        <p><strong>Sunday:</strong> 10:00 AM - 5:00 PM</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>🚌 Transportation</h4>
+                        <p>University buses available from major city points</p>
+                        <p><strong>Route Information:</strong> +91 20 1234 5679</p>
+                        <p><strong>Hostel Facilities:</strong> Available for outstation students</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="content-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>❓ How do I apply for the MCA program?</h4>
+                    <p>Applications can be submitted online through our admission portal. Visit our website or contact the admission office for detailed information about eligibility criteria and application procedures.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>💰 What are the fee structures?</h4>
+                    <p>Our fee structure is competitive and includes tuition, lab fees, and other academic charges. Scholarships and financial aid options are available for eligible students. Contact our office for detailed fee information.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>🏢 Are placement services available?</h4>
+                    <p>Yes, we have a dedicated placement cell that works closely with leading IT companies. Our placement rate is consistently above 95% with attractive salary packages for our graduates.</p>
+                </div>
+                
+                <div class="card">
+                    <h4>🏠 Is hostel accommodation available?</h4>
+                    <p>Yes, we provide separate hostel facilities for male and female students with modern amenities, Wi-Fi, mess facilities, and 24/7 security. Hostel admission is based on availability and distance criteria.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact -->
+        <section class="content-section" style="background: linear-gradient(135deg, #dc2626, #ef4444); color: white; border-radius: 12px; text-align: center;">
+            <h2 style="color: white;">🚨 Emergency Contact</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 1rem; opacity: 0.9;">For urgent matters outside office hours</p>
+            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 1.2rem; font-weight: 600;">
+                <div>📞 Emergency: +91 98765 43210</div>
+                <div>🏥 Medical: +91 98765 43211</div>
+                <div>🔒 Security: +91 98765 43212</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sanjivani University - MCA Department</p>
+        <p>Excellence in Computer Applications Education</p>
+        <div class="footer-links">
+            <a href="#">Contact Directory</a>
+            <a href="#">Campus Map</a>
+            <a href="#">Visitor Guidelines</a>
+            <a href="#">Feedback Form</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for form handling -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.fullName || !data.email || !data.inquiry || !data.subject || !data.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            
+            // Reset form
+            event.target.reset();
+        }
+        
+        // Add some interactivity to the inquiry type selector
+        document.getElementById('inquiry').addEventListener('change', function() {
+            const subjectField = document.getElementById('subject');
+            const inquiryType = this.value;
+            
+            // Auto-populate subject based on inquiry type
+            const subjectMappings = {
+                'admission': 'Admission Inquiry - MCA Program',
+                'curriculum': 'Curriculum Information Request',
+                'faculty': 'Faculty Information Request',
+                'facilities': 'Facilities and Infrastructure Inquiry',
+                'placement': 'Placement Assistance Information',
+                'research': 'Research Opportunities Inquiry',
+                'exam': 'Examination Related Query'
+            };
+            
+            if (subjectMappings[inquiryType]) {
+                subjectField.value = subjectMappings[inquiryType];
+            }
+        });
+    </script>
+</body>
+</html>

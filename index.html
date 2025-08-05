@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjivani University | Home - MCA Department</title>
+    
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="external-styles.css">
+    
+    <!-- Internal CSS for page-specific styling -->
+    <style>
+        /* ID selector */
+        #hero-section {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        /* Class selector */
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Descendant selector */
+        .slideshow-container .slide:nth-child(1) {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23667eea" width="1200" height="400"/><text x="600" y="200" text-anchor="middle" fill="white" font-size="48" font-family="Arial">Campus Life</text></svg>');
+        }
+        
+        .slideshow-container .slide:nth-child(2) {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23764ba2" width="1200" height="400"/><text x="600" y="200" text-anchor="middle" fill="white" font-size="48" font-family="Arial">Modern Labs</text></svg>');
+        }
+        
+        .slideshow-container .slide:nth-child(3) {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23f093fb" width="1200" height="400"/><text x="600" y="200" text-anchor="middle" fill="white" font-size="48" font-family="Arial">Industry Connect</text></svg>');
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with university branding -->
+    <header>
+        <h1>Sanjivani University</h1>
+        <p>Master of Computer Applications (MCA)</p>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="department.html" class="nav-link">About Department</a>
+            <a href="faculty.html" class="nav-link">Faculty</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-section" class="fade-in">
+            <h2 class="hero-title">Welcome to <span class="highlight-text">MCA Department</span></h2>
+            <p class="hero-subtitle">Empowering future technology leaders with cutting-edge education and industry-relevant skills in computer applications.</p>
+        </section>
+
+        <!-- Image Slideshow -->
+        <section class="content-section">
+            <h2 class="section-title">Discover Our Campus</h2>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <h3>Vibrant Campus Life</h3>
+                        <p>Experience a dynamic learning environment with state-of-the-art facilities, modern infrastructure, and a vibrant student community that fosters growth and innovation.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h3>Advanced Computer Labs</h3>
+                        <p>Our cutting-edge computer laboratories are equipped with the latest technology and software, providing hands-on experience in programming, development, and research.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h3>Industry Partnerships</h3>
+                        <p>Strong connections with leading technology companies ensure our students get real-world exposure through internships, projects, and placement opportunities.</p>
+                    </div>
+                </div>
+                
+                <!-- Navigation arrows -->
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+            
+            <!-- Dots indicators -->
+            <div class="dots-container">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="content-section">
+            <h2 class="section-title">Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-card pulse-hover">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Students Enrolled</div>
+                </div>
+                <div class="stat-card pulse-hover">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Placement Rate</div>
+                </div>
+                <div class="stat-card pulse-hover">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Expert Faculty</div>
+                </div>
+                <div class="stat-card pulse-hover">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Industry Partners</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About MCA Program -->
+        <section class="content-section">
+            <h2 class="section-title">About MCA Program</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Program Overview</h3>
+                    <p>The Master of Computer Applications (MCA) is a 2-year postgraduate program designed to provide comprehensive knowledge in computer science and applications. Our curriculum combines theoretical foundations with practical skills.</p>
+                    <div class="quote-text">
+                        "Bridging the gap between academic excellence and industry requirements."
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Key Features</h3>
+                    <ul style="text-align: left; padding-left: 1rem;">
+                        <li>Industry-aligned curriculum</li>
+                        <li>Hands-on project experience</li>
+                        <li>Expert faculty guidance</li>
+                        <li>Modern lab facilities</li>
+                        <li>Placement assistance</li>
+                        <li>Research opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specializations -->
+        <section class="content-section">
+            <h2 class="section-title">Specialization Areas</h2>
+            <div class="grid-3">
+                <div class="card image-overlay">
+                    <h3>Software Development</h3>
+                    <p>Full-stack development, mobile applications, and enterprise software solutions using modern frameworks and technologies.</p>
+                    <span class="badge info">Popular</span>
+                </div>
+                <div class="card image-overlay">
+                    <h3>Data Science & Analytics</h3>
+                    <p>Big data processing, machine learning, artificial intelligence, and business intelligence solutions.</p>
+                    <span class="badge success">Trending</span>
+                </div>
+                <div class="card image-overlay">
+                    <h3>Cybersecurity</h3>
+                    <p>Information security, network security, ethical hacking, and digital forensics in the modern digital landscape.</p>
+                    <span class="badge warning">High Demand</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="content-section" style="text-align: center;">
+            <h2 class="section-title">Ready to Start Your Journey?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Join Sanjivani University's MCA program and transform your passion for technology into a successful career.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button class="btn pulse-hover" onclick="window.location.href='department.html'">Learn More</button>
+                <button class="btn-outline" onclick="window.location.href='contact.html'">Contact Us</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sanjivani University - MCA Department</p>
+        <p>Excellence in Computer Applications Education</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Academic Calendar</a>
+            <a href="#">Student Portal</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for slideshow functionality -->
+    <script>
+        let slideIndex = 1;
+        showSlide(slideIndex);
+        
+        // Auto-advance slides every 5 seconds
+        setInterval(() => {
+            slideIndex++;
+            if (slideIndex > 3) slideIndex = 1;
+            showSlide(slideIndex);
+        }, 5000);
+        
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+        
+        function showSlide(n) {
+            let slides = document.getElementsByClassName('slide');
+            let dots = document.getElementsByClassName('dot');
+            
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            
+            // Remove active class from all dots
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            
+            // Show current slide and highlight current dot
+            if (slides[slideIndex - 1]) {
+                slides[slideIndex - 1].classList.add('active');
+            }
+            if (dots[slideIndex - 1]) {
+                dots[slideIndex - 1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

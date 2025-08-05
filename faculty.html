@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjivani University | Faculty - MCA Department</title>
+    
+    <!-- Internal and External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="external-styles.css">
+    
+    <!-- Page-specific styling -->
+    <style>
+        /* Multiple class selector */
+        .faculty-card.featured {
+            border: 3px solid var(--accent-color);
+            background: linear-gradient(135deg, #fef3c7, #fbbf24);
+            color: var(--text-dark);
+        }
+        
+        /* Pseudo-class selector */
+        .faculty-card:nth-child(even) {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+        }
+        
+        /* Universal selector within faculty section */
+        .faculty-section * {
+            transition: all 0.3s ease;
+        }
+        
+        /* Attribute selector for email links */
+        a[href^="mailto:"] {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a[href^="mailto:"]:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        /* Research interests styling */
+        .research-interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+        
+        .research-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Sanjivani University</h1>
+        <p>Master of Computer Applications (MCA)</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="department.html" class="nav-link">About Department</a>
+            <a href="faculty.html" class="nav-link active">Faculty</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="content-section fade-in">
+            <h1 class="section-title">Our Distinguished Faculty</h1>
+            <p class="quote-text">"Meet our experienced educators and researchers who are dedicated to shaping the next generation of technology professionals."</p>
+        </section>
+
+        <!-- Department Head -->
+        <section class="content-section faculty-section">
+            <h2 class="section-title">Department Leadership</h2>
+            <div class="faculty-card featured pulse-hover">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'><circle fill='%233b82f6' cx='75' cy='75' r='75'/><text x='75' y='85' text-anchor='middle' fill='white' font-size='60' font-family='Arial'>YM</text></svg>" alt="Dr. Priya Sharma">
+                <h4>Dr.Yogesh modhe</h4>
+                <div class="designation">Head of Department & Professor</div>
+                <p><strong>Experience:</strong> 18+ years in Academia and Industry</p>
+                <p><strong>Email:</strong> <a href="mailto:priya.sharma@sanjivani.edu.in">yogesh.modhe@sanjivani.edu.in</a></p>
+                
+                <div class="research-interests">
+                    <span class="research-tag">Agil Methodology</span>
+                    <span class="research-tag">Machine Learning</span>
+                    <span class="research-tag">Deep Learning</span>
+                    <span class="research-tag">Computer Vision</span>
+                </div>
+                
+                <p style="margin-top: 1rem; font-style: italic;">"Leading the department with a vision to create world-class computer professionals who can contribute to technological advancement and societal development."</p>
+            </div>
+        </section>
+
+        <!-- Core Faculty -->
+        <section class="content-section faculty-section">
+            <h2 class="section-title">Core Faculty Members</h2>
+            <div class="grid-2">
+                <!-- Faculty Member 1 -->
+                <div class="faculty-card pulse-hover">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'><circle fill='%2310b981' cx='75' cy='75' r='75'/><text x='75' y='85' text-anchor='middle' fill='white' font-size='60' font-family='Arial'>VK</text></svg>" alt="Prof. Rajesh Kumar">
+                    <h4>Prof. Vikas Kumar</h4>
+                    <div class="designation">Associate Professor</div>
+                    <p><strong>Experience:</strong> 12+ years</p>
+                    <p><strong>Email:</strong> <a href="mailto:rajesh.kumar@sanjivani.edu.in">vikas.Kumar@sanjivani.edu.in</a></p>
+                    
+                    <div class="research-interests">
+                        <span class="research-tag">Machine Learning</span>
+                        <span class="research-tag">Database Systems</span>
+                        <span class="research-tag">Software Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 2 -->
+                <div class="faculty-card pulse-hover">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'><circle fill='%23f59e0b' cx='75' cy='75' r='75'/><text x='75' y='85' text-anchor='middle' fill='white' font-size='60' font-family='Arial'>SN</text></svg>" alt="Dr. Anita Mehta">
+                    <h4>Dr. Sasank nath</h4>
+                    <div class="designation">Associate Professor</div>
+                    <p><strong>Experience:</strong> 14+ years</p>
+                    <p><strong>Email:</strong> <a href="mailto:anita.mehta@sanjivani.edu.in">Sasank.nath@sanjivani.edu.in</a></p>
+                    
+                    <div class="research-interests">
+                        <span class="research-tag">Web technology</span>
+                        <span class="research-tag">Big Data Analytics</span>
+                        <span class="research-tag">Business Intelligence</span>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 3 -->
+                <div class="faculty-card pulse-hover">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'><circle fill='%23ef4444' cx='75' cy='75' r='75'/><text x='75' y='85' text-anchor='middle' fill='white' font-size='60' font-family='Arial'>VS</text></svg>" alt="Prof. Vikram Singh">
+                    <h4>Prof. Kunwar Ragavendra singh</h4>
+                    <div class="designation">Assistant Professor</div>
+                    <p><strong>Experience:</strong> 8+ years</p>
+                    <p><strong>Email:</strong> <a href="mailto:vikram.singh@sanjivani.edu.in">vikram.singh@sanjivani.edu.in</a></p>
+                    
+                    <div class="research-interests">
+                        <span class="research-tag">Advanced Data Structure Algorithm</span>
+                       <span class="research-tag">Network Security</span>
+                        <span class="research-tag">Ethical Hacking</span>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 4 -->
+                <div class="faculty-card pulse-hover">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'><circle fill='%236366f1' cx='75' cy='75' r='75'/><text x='75' y='85' text-anchor='middle' fill='white' font-size='60' font-family='Arial'>SP</text></svg>" alt="Dr. Sneha Patel">
+                    <h4>Dr. Prajakta Bhand</h4>
+                    <div class="designation">Assistant Professor</div>
+                    <p><strong>Experience:</strong> 10+ years</p>
+                    <p><strong>Email:</strong> <a href="mailto:sneha.patel@sanjivani.edu.in">Prajakta.bhnad@sanjivani.edu.in</a></p>
+                    
+                    <div class="research-interests">
+                        <span class="research-tag">Mathematical Foundation for Computer Science</span>
+                        <span class="research-tag">Cloud Computing</span>
+                        <span class="research-tag">IoT Applications</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faculty Statistics -->
+        <section class="content-section">
+            <h2 class="section-title">Faculty Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Faculty Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Ph.D. Holders</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Research Papers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15:1</div>
+                    <div class="stat-label">Student-Faculty Ratio</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sanjivani University - MCA Department</p>
+        <p>Excellence in Computer Applications Education</p>
+        <div class="footer-links">
+            <a href="#">Faculty Directory</a>
+            <a href="#">Research Publications</a>
+            <a href="#">Academic Profiles</a>
+            <a href="#">Collaboration Opportunities</a>
+        </div>
+    </footer>
+</body>
+</html>

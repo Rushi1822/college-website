@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjivani University | About Department - MCA</title>
+    
+    <!-- Internal and External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="external-styles.css">
+    
+    <!-- Page-specific styling -->
+    <style>
+        /* Tag selector for all paragraphs in department info */
+        .department-content p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        /* Adjacent sibling selector */
+        .vision-mission h3 + p {
+            font-style: italic;
+            color: var(--text-light);
+        }
+        
+        /* Attribute selector */
+        img[alt="Department Lab"] {
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.3s ease;
+        }
+        
+        img[alt="Department Lab"]:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Child selector */
+        .curriculum-list > li {
+            background: var(--bg-light);
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+        
+        .timeline-section {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Sanjivani University</h1>
+        <p>Master of Computer Applications (MCA)</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="department.html" class="nav-link active">About Department</a>
+            <a href="faculty.html" class="nav-link">Faculty</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="content-section fade-in">
+            <h1 class="section-title">About MCA Department</h1>
+            <p class="quote-text">"Nurturing tomorrow's technology leaders through comprehensive education and innovative research in computer applications."</p>
+        </section>
+
+        <!-- Department Overview -->
+        <section class="content-section department-content">
+            <div class="grid-2">
+                <div>
+                    <h2 class="section-subtitle">Department Overview</h2>
+                    <p>The Master of Computer Applications (MCA) department at Sanjivani University stands as a beacon of excellence in computer science education. Established with the vision of creating industry-ready professionals, our department has consistently evolved to meet the dynamic demands of the technology sector.</p>
+                    
+                    <p>Our comprehensive 2-year postgraduate program is meticulously designed to bridge the gap between academic learning and industry requirements. We focus on developing both technical expertise and soft skills, ensuring our graduates are well-prepared for leadership roles in the IT industry.</p>
+                    
+                    <p>With state-of-the-art infrastructure, experienced faculty, and strong industry partnerships, we provide an environment that fosters innovation, creativity, and professional growth.</p>
+                </div>
+                <div>
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 300'><rect fill='%23e2e8f0' width='500' height='300'/><rect fill='%233b82f6' x='50' y='50' width='400' height='200' rx='10'/><text x='250' y='160' text-anchor='middle' fill='white' font-size='24' font-family='Arial'>Modern Computer Lab</text></svg>" alt="Department Lab" style="width: 100%; height: 250px; object-fit: cover;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision and Mission -->
+        <section class="content-section vision-mission">
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🎯 Our Vision</h3>
+                    <p>To be a globally recognized center of excellence in computer applications education, fostering innovation, research, and technological advancement that contributes to societal development.</p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Global recognition in MCA education</li>
+                        <li>Innovation-driven curriculum</li>
+                        <li>Research excellence</li>
+                        <li>Industry leadership</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🚀 Our Mission</h3>
+                    <p>To provide comprehensive, industry-relevant education in computer applications while fostering critical thinking, innovation, and ethical values among students to create competent professionals.</p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Quality education delivery</li>
+                        <li>Industry-academia collaboration</li>
+                        <li>Research and development</li>
+                        <li>Ethical professional development</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Department History Timeline -->
+        <section class="timeline-section">
+            <h2 class="section-title" style="color: var(--primary-color);">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>2010 - Department Establishment</h4>
+                    <p>MCA Department established with the first batch of 60 students and 8 faculty members.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2015 - Infrastructure Expansion</h4>
+                    <p>Added 3 new computer labs with latest technology and expanded library resources.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2018 - Industry Partnerships</h4>
+                    <p>Established partnerships with 25+ leading IT companies for internships and placements.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2020 - Research Center</h4>
+                    <p>Launched dedicated research center focusing on AI, ML, and emerging technologies with industry-standard equipment.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2023 - Excellence Recognition</h4>
+                    <p>Received state-level recognition for outstanding placement records and academic excellence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Highlights -->
+        <section class="content-section">
+            <h2 class="section-title">Curriculum Highlights</h2>
+            <div class="grid-2">
+                <div>
+                    <h3 class="section-subtitle">Core Subjects</h3>
+                    <ul class="curriculum-list" style="list-style: none; padding: 0;">
+                        <li><strong>Programming Fundamentals:</strong> C, C++, Java, Python</li>
+                        <li><strong>Database Management:</strong> SQL, NoSQL, Database Design</li>
+                        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Frameworks</li>
+                        <li><strong>Software Engineering:</strong> SDLC, Testing, Project Management</li>
+                        <li><strong>Data Structures & Algorithms:</strong> Problem Solving, Optimization</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="section-subtitle">Specialization Areas</h3>
+                    <ul class="curriculum-list" style="list-style: none; padding: 0;">
+                        <li><strong>Artificial Intelligence:</strong> ML, Deep Learning, NLP</li>
+                        <li><strong>Cybersecurity:</strong> Network Security, Ethical Hacking</li>
+                        <li><strong>Cloud Computing:</strong> AWS, Azure, DevOps</li>
+                        <li><strong>Mobile Development:</strong> Android, iOS, Cross-platform</li>
+                        <li><strong>Data Science:</strong> Analytics, Visualization, Big Data</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities -->
+        <section class="content-section">
+            <h2 class="section-title">World-Class Facilities</h2>
+            <div class="grid-3">
+                <div class="card pulse-hover">
+                    <h3>💻 Computer Labs</h3>
+                    <p>5 state-of-the-art computer laboratories equipped with latest hardware and software, supporting 24/7 access for students.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                    </div>
+                    <small>95% Latest Technology</small>
+                </div>
+                <div class="card pulse-hover">
+                    <h3>📚 Digital Library</h3>
+                    <p>Comprehensive digital library with access to international journals, e-books, and research databases.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <small>90% Digital Resources</small>
+                </div>
+                <div class="card pulse-hover">
+                    <h3>🔬 Research Center</h3>
+                    <p>Dedicated research facilities for AI, ML, and emerging technologies with industry-standard equipment.</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <small>85% Research Projects</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Life -->
+        <section class="content-section">
+            <h2 class="section-title">Student Life & Activities</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🎓 Academic Excellence</h3>
+                    <p>Our students consistently achieve high academic standards with personalized mentoring and support systems.</p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Individual faculty mentoring</li>
+                        <li>Regular assessment and feedback</li>
+                        <li>Peer learning programs</li>
+                        <li>Industry project collaborations</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🏆 Extracurricular Activities</h3>
+                    <p>Beyond academics, we encourage participation in various activities that develop leadership and teamwork skills.</p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Technical symposiums and workshops</li>
+                        <li>Coding competitions and hackathons</li>
+                        <li>Student clubs and societies</li>
+                        <li>Cultural and sports events</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="content-section">
+            <h2 class="section-title">Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">1500+</div>
+                    <div class="stat-label">Alumni Placed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">₹8.5L</div>
+                    <div class="stat-label">Highest Package</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Research Papers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="content-section" style="text-align: center; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; border-radius: 12px;">
+            <h2 style="color: white;">Join Our MCA Family</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">Be part of a department that shapes the future of technology and creates tomorrow's leaders.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button class="btn" style="background: white; color: var(--primary-color);" onclick="window.location.href='contact.html'">Apply Now</button>
+                <button class="btn-outline" style="border-color: white; color: white;" onclick="window.location.href='faculty.html'">Meet Our Faculty</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sanjivani University - MCA Department</p>
+        <p>Excellence in Computer Applications Education</p>
+        <div class="footer-links">
+            <a href="#">Admission Guidelines</a>
+            <a href="#">Academic Calendar</a>
+            <a href="#">Research Publications</a>
+            <a href="#">Alumni Network</a>
+        </div>
+    </footer>
+</body>
+</html>
